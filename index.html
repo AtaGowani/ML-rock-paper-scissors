@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="./src/js/ML.js"></script>
+  <script src="./src/js/stats.js"></script>
+  <script src="./src/js/main.js"></script>
+  <title>Rock, Paper, Sissor</title>
+</head>
+<body>
+  <section class="game">
+    <div class="section">
+      <h1>Rock, Paper, Scissors</h1>
+    </div>
+    <div class="battle-area section">
+      <div class="human">
+        <h4>You</h4>
+        <img src="">
+        <p id="human-score">0</p>
+      </div>
+      <div>
+        <p class="vs">VS</p>
+      </div>
+      <div class="cpu">
+        <h4>CPU</h4>
+        <img src="">
+        <p id="cpu-score">0</p>
+      </div>
+    </div>
+    <div class="results">
+      <h2>Pick a choice.</h2>
+    </div>
+    <div class="section options">
+      <span class="options">
+        <div class="rock" onclick="pickChoice(this)">
+          <img src="./src/imgs/rock.png" alt="rock">
+        </div>
+        <div class="paper" onclick="pickChoice(this)">
+          <img src="./src/imgs/paper.png" alt="paper">
+        </div>
+        <div class="scissor" onclick="pickChoice(this)">
+          <img src="./src/imgs/scissor.png" alt="scissor">
+        </div>
+      </span>
+    </div>
+    <div class="stats-btn">
+        <button onclick="showStats()">Stats</button>
+    </div>
+  </section>
+  <section class="stats hide flex-container">
+    <div id="r-r">
+      <img src="./src/imgs/r-r.png">
+      <p></p>
+    </div>
+    <div id="r-p">
+      <img src="./src/imgs/r-p.png">
+      <p></p>
+    </div>
+    <div id="r-s">
+      <img src="./src/imgs/r-s.png">
+      <p></p>
+    </div>
+    <div id="p-r">
+      <img src="./src/imgs/p-r.png">
+      <p></p>
+    </div>
+    <div id="p-p">
+      <img src="./src/imgs/p-p.png">
+      <p></p>
+    </div>
+    <div id="p-s">
+      <img src="./src/imgs/p-s.png">
+      <p></p>
+    </div>
+    <div id="s-r">
+      <img src="./src/imgs/s-r.png">
+      <p></p>
+    </div>
+    <div id="s-p">
+      <img src="./src/imgs/s-p.png">
+      <p></p>
+    </div>
+    <div id="s-s">
+      <img src="./src/imgs/s-s.png">
+      <p></p>
+    </div>
+  </section>
+</body>
+</html>

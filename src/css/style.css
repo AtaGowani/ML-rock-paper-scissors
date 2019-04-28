@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.stats {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.stats div {
+  margin: 0 auto;
+}
+
+.stats img {
+  width: 20rem;
+}
+
+.stats div p {
+  font-size: 3.5rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.game {
+  text-align: center;
+}
+
+.battle-area p {
+  font-size: 2rem;
+}
+
+.stats-btn button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #2196F3;
+  padding: .5rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.stats-btn button:hover {
+  transform: scale(1.2);
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.options img, 
+.options div {
+  display: inline;
+}
+
+.options div {
+  margin: 0 1rem;
+}
+
+.options div:hover img {
+  transform: scale(1.2);
+}
+
+.options img {
+  height: 5rem;
+}
+
+.battle-area div,
+.battle-area img {
+  display: inline-block;
+}
+
+.options {
+  margin-top: 2rem;
+}
+
+.human {
+  margin-right: 2rem;
+}
+
+.cpu {
+  margin-left: 2rem;
+}
+
+.battle-area img {
+  height: 8rem;
+}
+
+.stats p {
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+p.vs {
+  display: inline-block;
+  font-size: 2rem;
+  margin: auto;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h4 {
+    font-size: 3rem;
+  }
+  
+  .human {
+    margin-right: 4rem;
+  }
+  
+  .cpu {
+    margin-left: 4rem;
+  }
+  
+  .battle-area img {
+    height: 10rem;
+  }
+  
+  .stats p {
+    font-size: 3rem;
+  }
+  
+  p.vs {
+    font-size: 3rem;
+  }
+
+  .options img {
+    height: 8rem;
+  }
+
+  .battle-area p {
+    font-size: 3rem;
+  }
+  
+  .stats-btn button {
+    font-size: 1.5rem;
+  }
+
+  .stats-btn {
+    margin-top: .5rem;
+  }
+
+  .stats img {
+    width: 23rem;
+  }
+  
+  .stats div p {
+    font-size: 4rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .options img {
+    height: 10rem;
+  }
+
+  .battle-area img {
+    height: 13rem;
+  }
+
+  section {
+    margin: 1rem 0;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
