@@ -15,13 +15,14 @@ function showStats() {
   var s_p = document.getElementById('s-p').getElementsByTagName('p')[0];
   var s_s = document.getElementById('s-s').getElementsByTagName('p')[0];
 
+  // cond_count[choice][given]
   r_r.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.ROCK][game_choices.ROCK] / game_choices.properties.count[game_choices.ROCK]) * 100) + "%";
-  r_p.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.ROCK][game_choices.PAPER] / game_choices.properties.count[game_choices.ROCK]) * 100) + "%";
-  r_s.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.ROCK][game_choices.SCISSOR] / game_choices.properties.count[game_choices.ROCK]) * 100) + "%";
-  p_r.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.PAPER][game_choices.ROCK] / game_choices.properties.count[game_choices.PAPER]) * 100) + "%";
-  p_p.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.PAPER][game_choices.ROCK] / game_choices.properties.count[game_choices.PAPER]) * 100) + "%";
-  p_s.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.PAPER][game_choices.SCISSOR] / game_choices.properties.count[game_choices.PAPER]) * 100) + "%";
-  s_r.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.SCISSOR][game_choices.ROCK] / game_choices.properties.count[game_choices.SCISSOR]) * 100) + "%";
-  s_p.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.SCISSOR][game_choices.PAPER] / game_choices.properties.count[game_choices.SCISSOR]) * 100) + "%";
+  r_p.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.PAPER][game_choices.ROCK] / game_choices.properties.count[game_choices.ROCK]) * 100) + "%";
+  r_s.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.SCISSOR][game_choices.ROCK] / game_choices.properties.count[game_choices.ROCK]) * 100) + "%";
+  p_r.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.ROCK][game_choices.PAPER] / game_choices.properties.count[game_choices.PAPER]) * 100) + "%";
+  p_p.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.PAPER][game_choices.PAPER] / game_choices.properties.count[game_choices.PAPER]) * 100) + "%";
+  p_s.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.SCISSOR][game_choices.PAPER] / game_choices.properties.count[game_choices.PAPER]) * 100) + "%";
+  s_r.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.ROCK][game_choices.SCISSOR] / game_choices.properties.count[game_choices.SCISSOR]) * 100) + "%";
+  s_p.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.PAPER][game_choices.SCISSOR] / game_choices.properties.count[game_choices.SCISSOR]) * 100) + "%";
   s_s.innerHTML = Math.round((game_choices.properties.cond_count[game_choices.SCISSOR][game_choices.SCISSOR] / game_choices.properties.count[game_choices.SCISSOR]) * 100) + "%";
 }
